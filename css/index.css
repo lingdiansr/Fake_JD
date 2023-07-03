@@ -1,21 +1,78 @@
-#header {
-				background-color: lightgray;
-				width: 1920px;
-				height: 22px;
-			}
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: #f4f4f4;
+}
 
-			.sign_up {
-				color: red;
-			}
+a {
+	text-decoration: none;
+}
+#topbarBackground{
+	background-color: #e3e4e5;
+}
+#topbar {
+	background-color: #e3e4e5;
+	/* margin: -15px; */
+	height: 30px;
+	width: 1190px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: normal;
+	vertical-align: middle;
+}
 
-			ul {
-				list-style: none;
-			}
+#rightMaue {
+	text-align: right;
+}
 
-			li {
-				float: left;
-			}
-			a{
-				text-decoration:none;
-			}
-			a:link{color:darkgray;}
+ul {
+	list-style: none;
+	display: inline-flex;
+	margin: 0;
+	/* margin-top: 3px; */
+	height: 30px;
+	vertical-align: middle;
+}
+
+li {
+	margin-left: 5px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+li a {
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+li.spacer {
+	color: #999999;
+	border-left: 1px solid #999999;
+	line-height: 1px;
+	height: 10px;
+}
+
+.iconfont {
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	width: 12px;
+	height: 12px;
+	line-height: 12px;
+
+}
+
+a:link {
+	color: #999999;
+}
+
+a:visited {
+	color: #999999;
+}
+
+a:hover {
+	color: red;
+}
