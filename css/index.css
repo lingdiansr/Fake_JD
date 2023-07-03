@@ -1,0 +1,21 @@
+#header {
+				background-color: lightgray;
+				width: 1920px;
+				height: 22px;
+			}
+
+			.sign_up {
+				color: red;
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			li {
+				float: left;
+			}
+			a{
+				text-decoration:none;
+			}
+			a:link{color:darkgray;}
