@@ -10,6 +10,25 @@
 		function sign_false() {
 			alert("登陆失败！")
 		}
+		// let time;
+		// let time1;
+		// function f(n) {
+		// 	let time = Date.now();
+		// 	if (n == 1) {
+		// 		return 1;
+		// 	}
+		// 	if (n == 2) {
+		// 		return 2
+		// 	}
+		// 	let time1 = Date.now();
+		// 	return f(n - 1) + f(n - 2);
+		// }
+		// function palouti() {
+		// 	var input = document.getElementById("myinput").value;
+		// 	var num = f(input);
+		// 	console.log(time1-time);
+		// 	console.log()
+		// }
 	</script>
 </head>
 
@@ -17,13 +36,13 @@
 	<div id="topbarBackground">
 		<div id="topbar">
 			<ul id="location">
-				<img src="./img/loca_ico.png" height="50%">
+				<img src="./img/loca_ico.png" alt="" height="50%">
 				<a href="#">&nbsp;湖南</a>
 			</ul>
 			<ul id="rightmenu">
 				<li id="login">
 					<a onclick="sign_false()" href="#">你好，请登录</a>
-					&nbsp;&nbsp;
+					&nbsp;
 					<a style="color: red;" href="#" id="sign_up">免费注册</a>
 				</li>
 				<li class="spacer"></li>
@@ -41,16 +60,47 @@
 				<li class="spacer"></li>
 				<li><a href="#">网站无障碍</a></li>
 			</ul>
-
 		</div>
 	</div>
-	<div id="searchbox"></div>
+	<div id="header">
+		<div id="searchbox">
+			<img src="./img/search_logo.png" alt="logo" width="190px" height="120px">
+			<div id="inputbox">
+				<div id="input">
+					<div id="searchinput">
+						<input type="">
+						<button>搜索<i class="iconfont"></i></button>
+					</div>
+					<div id="searchhotwords">
+						<a href="#">港荣蒸蛋糕</a>
+						<a href="#">京东京造</a>
+						<a href="#">vivoX90s</a>
+						<a href="#">学习手机</a>
+						<a href="#">热卖潮品</a>
+						<a href="#">童装童鞋</a>
+						<a href="#">洞洞鞋</a>
+						<a href="#">品质鞋靴</a>
+						<a href="#">IPnone14</a>
+					</div>
+					
+				</div>
+				<ul id="searchlist">
+					<li></li>
+				</ul>
+			</div>
+			<div id="emptylogo"></div>
+		</div>
+	</div>
 	<div id="main">
 		<div id="classify"></div>
 		<div id="mainimg"></div>
 		<div id="user"></div>
 	</div>
 	<div id="jd_miaosha"></div>
+	<!-- <span>爬楼梯</span>
+	<input type="输入n" id="myinput">
+	<button onclick="palouti()">计算</button> -->
+
 </body>
 
 </html>
