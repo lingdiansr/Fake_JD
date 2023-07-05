@@ -237,7 +237,10 @@ li.spacer {
 	height: 26px;
 	border: 1px solid transparent;
 	line-height: 26px;
-	font-size: 12px;
+	font-size: 13px;
+}
+#searchinput input:focus{
+	outline: none;
 }
 
 #searchinput button {
