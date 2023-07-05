@@ -242,7 +242,9 @@ button img {
 	height: 20px;
 }
 
-#myshopingcarbox {
+/* #myshopingcarbox {} */
+
+#myshopingcar {
 	width: 132px;
 	height: 36px;
 	margin-left: 18px;
@@ -255,22 +257,19 @@ button img {
 	border: 1px solid #eeeeee;
 }
 
-#myshopingcar {}
-
 #myshopingcar a {
 	color: #e1251b;
 	font-size: 12px;
 }
 
-#myshopingcar:hover {
+#myshopingcarbox:hover #myshopingcar {
 	border-color: #e2231a;
 	border-bottom-color: #fff;
 }
-
 #myshopingcardrop {
 	display: none;
 	position: relative;
-	right: 181px;
+	right: 0px;
 	top: 0px;
 	width: 310px;
 	height: 71px;
@@ -278,12 +277,22 @@ button img {
 	background-color: #fff;
 	box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
 }
+#myshopingcarbox:hover #myshopingcardrop{
+	margin-top: -1px;
+		display: block;
+}
+/*
+#myshopingcar:hover {
+	border-color: #e2231a;
+	border-bottom-color: #fff;
+}
+
 
 #myshopingcar:hover #myshopingcardrop {
 	margin-top: -1px;
 	display: block;
 
-}
+} */
 
 #searchhotwords {
 	width: 550px;
