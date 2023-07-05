@@ -46,13 +46,17 @@ a {
 
 
 }
-#locationbox{
-	
+
+#locationbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
 #adressdropdown {
-	position: absolute;
+	position: relative;
 	left: 0px;
-	top: 30px;
+	top: 0px;
 	/* z-index: 30; */
 	width: 322px;
 	height: 333px;
@@ -63,15 +67,18 @@ a {
 	display: none;
 }
 
-#location:hover {
-	background-color: #fff;
+#location:hover #locationbox,
+#adressdropdown {
+	background-color: #ffffff;
 	border: 1px solid #cccccc;
+	border-block-color: #ffffff;
 	margin: -1px;
-	position: absolute;
+	position: relative;
 }
 
 #location:hover #adressdropdown {
 	background-color: #fff;
+	margin-top: -1px;
 	display: block;
 }
 
@@ -210,7 +217,7 @@ li.spacer {
 
 #searchinput input {
 	left: 0;
-	padding: 2px 44px 2px 17px;
+	padding: 2px 2px 2px 2px;
 	width: 490px;
 	height: 26px;
 	border: 1px solid transparent;
@@ -225,13 +232,54 @@ li.spacer {
 	background-color: #e1251b;
 	font-size: 20px;
 	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
+}
+
+button img {
+	height: 20px;
 }
 
 #myshopingcar {
 	width: 132px;
 	height: 36px;
 	margin-left: 18px;
+	width: 130px;
+	height: 34px;
+	background-color: #fff;
+	text-align: center;
+	align-items: center;
+	line-height: 34px;
+	border: 1px solid #eeeeee;
+}
+
+#myshopingcar a {
+	color: #e1251b;
+	font-size: 12px;
+}
+
+#myshopingcar:hover {
+	border-color: #e2231a;
+	border-bottom-color: #fff;
+}
+
+#myshopingcardrop {
+	display: none;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 310px;
+	height: 71px;
+	/* border: 1px solid #ccc; */
+	background-color: #fff;
+	box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
+}
+
+#myshopingcar:hover #myshopingcardrop {
+	margin-top: -1px;
+	display: block;
 }
 
 #searchhotwords {
