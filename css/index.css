@@ -242,7 +242,7 @@ button img {
 	height: 20px;
 }
 
-#myshopingcar {
+#myshopingcarbox {
 	width: 132px;
 	height: 36px;
 	margin-left: 18px;
@@ -254,6 +254,8 @@ button img {
 	line-height: 34px;
 	border: 1px solid #eeeeee;
 }
+
+#myshopingcar {}
 
 #myshopingcar a {
 	color: #e1251b;
@@ -268,11 +270,11 @@ button img {
 #myshopingcardrop {
 	display: none;
 	position: relative;
-	left: 0px;
+	right: 181px;
 	top: 0px;
 	width: 310px;
 	height: 71px;
-	/* border: 1px solid #ccc; */
+	border: 1px solid #e2231a;
 	background-color: #fff;
 	box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
 }
@@ -280,6 +282,7 @@ button img {
 #myshopingcar:hover #myshopingcardrop {
 	margin-top: -1px;
 	display: block;
+
 }
 
 #searchhotwords {
