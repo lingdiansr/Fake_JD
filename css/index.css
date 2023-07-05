@@ -155,23 +155,70 @@ li.spacer {
 	flex-direction: column;
 	float: left;
 	justify-content: center;
-	align-items: center;
+	align-items: start;
 }
-
+#searchinputbox{
+	width: 700px;
+	height: 36px;
+	display: flex;
+	flex-direction: row;
+	margin-left: 55px;
+	margin-right: 55px;
+}
 #searchinput {
-	width: 456px;
+	width: 546px;
 	height: 32px;
 	border: 2px solid #e2231a;
+	display: flex;
+	float: left;
+	flex-direction: row;
 }
 
 #searchinput input {
 	left: 0;
 	padding: 2px 44px 2px 17px;
-	width: 425px;
+	width: 490px;
 	height: 26px;
 	border: 1px solid transparent;
 	line-height: 26px;
 	font-size: 12px;
+}
+
+#searchinput button {
+	width: 58px;
+	height: 32px;
+	border: none;
+	background-color: #e1251b;
+	font-size: 20px;
+	font-weight: 700;
+
+}
+
+#myshopingcar {
+	width: 132px;
+	height: 36px;
+	margin-left: 18px;
+}
+
+#searchhotwords {
+	width: 550px;
+	margin-left: 55px;
+}
+
+#searchhotwords a {
+	width: 48px;
+	height: 20px;
+	margin-right: 10px;
+	white-space: nowrap;
+	color: #999999;
+	text-decoration: none;
+	font-size: 12px;
+	margin-right: 7.9px;
+
+}
+
+#searchhotwords a:hover {
+	color: #e1251b;
 }
 
 #searchlist {
@@ -179,6 +226,11 @@ li.spacer {
 	/* border: 1px solid red; */
 	width: 810px;
 	margin: 0;
+}
+
+#rightad {
+	width: 190px;
+	height: 120px;
 }
 
 #emptylogo {
