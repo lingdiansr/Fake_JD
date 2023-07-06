@@ -262,7 +262,12 @@ li.spacer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: all 0.3s;
+}
 
+#searchinput button:hover {
+	background-color: #c81623;
+	transition: all 0.3s;
 }
 
 button img {
@@ -441,7 +446,8 @@ button img {
 	background-color: #fefefe;
 
 }
-#classify ul{
+
+#classify ul {
 	width: 190px;
 	height: 450px;
 	padding-top: 10px;
@@ -451,23 +457,45 @@ button img {
 	justify-content: center;
 	align-items: center;
 }
-.classify_menu_item{
+
+.classify_menu_item {
 	width: 172px;
 	height: 25px;
 	padding-left: 18px;
 	margin: 0;
 	float: left;
-	text-align: start;
+	text-align: center;
 	/* justify-content: center; */
 	align-items: center;
+	transition: all 0.125s;
 }
-.classify_menu_item a{
+
+.classify_menu_item:hover {
+	background-color: #d9d9d9;
+	transition: all 0.125s;
+
+}
+
+.classify_menu_item a {
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
 	color: #333333;
 	height: 19px;
 	width: 0 auto;
+}
+
+.classify_menu_item a:hover {
+	color: #c81623;
+}
+
+.classify_menu_item span {
+	font-size: 12px;
+	color: #636363;
+	padding-left: 2px;
+	padding-right: 2px;
+	width: auto;
+	height: auto;
 }
 
 #mainpictures {
