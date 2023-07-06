@@ -602,7 +602,16 @@ button img {
 	background: linear-gradient(270deg, white, #eeeeee, #eeeeee, white);
 	/* border-bottom: 1px solid; */
 }
-
+#newsbox{
+	width: inherit;
+	height: 130px;
+}
+#news_hd span{
+	font-weight: bold;
+	/* display: inline-block; */
+	font-size: 14px;
+	color: #333333;
+}
 /* ---------------MAIN END-------------------------------- */
 
 
