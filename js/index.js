@@ -1,33 +1,58 @@
 window.onload = function () {
-    var big_roll_time = 3000
-    var small_roll_time = 10000
-    var box = this.document.getElementById("bigpic");
-    var lik = box.getElementsByTagName("li");
-    function big_pic_roll(form_id, to_id) {
-        lik[form_id].className = "bigpichidden"
-        lik[to_id].className ="bigpicshow"
-    }
-    function small_pic_roll(form_id, to_id) {
+    var big_roll_time = 3000;
+    var small_roll_time = 10000;
 
+    var bigBox = document.getElementById("bigpic");
+    var smallBox = document.getElementById("smallpic");
+
+    var bigLik = bigBox.getElementsByTagName("li");
+    var smallLik = smallBox.getElementsByTagName("li");
+
+    function picRoll(box, lik, from_id, to_id) {
+        lik[from_id].className = box + "pichidden";
+        lik[to_id].className = box + "picshow";
     }
-    big_pic_roll(8, 0);
-    var i = 0;
-    function auto() {
-        if (++i >= 9) {
-            i = 0;
-            fun(0, 4);
+
+    var big_i = 0;
+    var small_i = 0;
+
+    function auto(box, lik, index) {
+        index++;
+        if (index == lik.length) {
+            picRoll(box, lik, lik.length - 1, 0);
+            index = 0;
+        } else {
+            picRoll(box, lik, index - 1, index);
         }
-        else fun(i, i - 1);
+
+        return index;
     }
-    //timer = this.setInterval(auto, 2000);
-    big_timer = this.setInterval(big_pic_roll, big_roll_time)
-    box.onmouseover = function () { 
-        // console.log('good');
-        clearInterval(timer);
-    }
-    box.onmouseout = function () { 
-        timer = setInterval(auto, big_roll_time); 
-    }
-    // big_timer = this.setInterval(big_pic_roll, big_roll_time)
-    // small_timer = this.setInterval()
-}
+
+    var bigTimer = setInterval(function () {
+        big_i = auto("big", bigLik, big_i);
+    }, big_roll_time);
+
+    var smallTimer = setInterval(function () {
+        small_i = auto("small", smallLik, small_i);
+    }, small_roll_time);
+
+    bigBox.onmouseover = function () {
+        clearInterval(bigTimer);
+    };
+
+    bigBox.onmouseout = function () {
+        bigTimer = setInterval(function () {
+            big_i = auto("big", bigLik, big_i);
+        }, big_roll_time);
+    };
+
+    smallBox.onmouseover = function () {
+        clearInterval(smallTimer);
+    };
+
+    smallBox.onmouseout = function () {
+        smallTimer = setInterval(function () {
+            small_i = auto("small", smallLik, small_i);
+        }, small_roll_time);
+    };
+};
